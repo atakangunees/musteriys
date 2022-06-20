@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Yeni Müşteri</title>
+</head>
+<body>
+	
+	<form action="/create" method="post" th:object="${musteri}">
+		<input type="text" th:field="*{name}" placeholder="İsim">
+		<input type="text" th:field="*{surname}" placeholder="Soyisim">
+		<input type="number" th:field="*{age}" placeholder="Yaş">
+		<input type="number" th:field="*{creditLimit}" placeholder="Kredi Limiti">
+		<input type="submit" value="Kaydet">
+	</form>
+
+</body>
+</html>

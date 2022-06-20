@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Anasayfa</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<div th:include="navbar.html :: navigation"></div>
+	<a href="/create">Yeni</a>
+	<a href="/list">Müşteriler</a>
+	<p th:text="${mesaj}"></p>
+</body>
+</html>
